@@ -1,0 +1,197 @@
+body {
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #9fc1ba;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #9fc1ba;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #9fc1ba;
+    margin: 0;
+}
+
+p {
+    line-height: 1.4rem;
+    margin: 0;
+}
+
+/* ----- nav ----- */
+
+header{
+    position: sticky;
+    top: 0;
+    background: #282828;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #9fc1ba;
+}
+
+a[class="current"] {
+    color: #9fc1ba;
+}
+
+/* ----- home ----- */
+
+.blog {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+article {
+    background: #282828;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+a[rel] {
+    color: #fff;
+    text-decoration: none;
+}
+
+a[rel]:hover {
+    color: #9fc1ba;
+}
+
+#b1 {
+    display: flex;
+    gap: 50px;
+    flex-flow: row wrap;
+}
+
+#b1-content {
+    flex: 1;
+}
+
+#sf {
+    min-width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex: none;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #9fc1ba;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 10px 20px;
+    border-bottom: 2px solid #9fc1ba;
+    text-align: left;
+}
+
+th {
+    background-color: #9fc1ba;
+    color: #121212;
+}
+
+tr:hover {
+    background-color: #9fc1ba;
+    color: #121212;
+}
+
+#b2 {
+    display: flex;
+    gap: 50px;
+    flex-flow: row-reverse wrap;
+}
+
+#b2 p {
+    flex: 1;
+}
+
+#major {
+    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex: none;
+}
+
+.newsletter {
+    margin: 20px 50px;
+}
+
+.newsletter form {
+    margin: 20px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    width: 20%;
+    padding: 10px;
+    background-color: #282828;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.newsletter input:hover, .newsletter input:focus /*focus not working*/ {
+    border: 2px solid #9fc1ba;
+}
+
+.newsletter button {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+    border: 2px solid #9fc1ba;
+    color: #9fc1ba;
+}
+
+.newsletter button:hover {
+    background-color: #9fc1ba;
+    border: 2px solid #9fc1ba;
+    color: #121212;
+}
+
+#contact {
+    display: flex;
+}

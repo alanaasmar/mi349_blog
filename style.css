@@ -14,7 +14,7 @@ h1 {
 h2 {
     font-size: 1.7rem;
     color: #9fc1ba;
-    margin: 0;
+    margin: 20px 0;
 }
 
 h3 {
@@ -110,6 +110,7 @@ a[rel]:hover {
     height: auto;
     overflow: hidden;
     flex: none;
+    border-radius: 20px;
 }
 
 table {
@@ -152,6 +153,7 @@ tr:hover {
     height: auto;
     overflow: hidden;
     flex: none;
+    border-radius: 20px;
 }
 
 .newsletter {
@@ -168,13 +170,19 @@ tr:hover {
 .newsletter input {
     width: 20%;
     padding: 10px;
-    background-color: #282828;
+    background-color: #3f3f3f;
+    border: 1px solid #575757;
     border-radius: 10px;
     color: #fff;
 }
 
-.newsletter input:hover, .newsletter input:focus /*focus not working*/ {
-    border: 2px solid #9fc1ba;
+.newsletter input:hover /*focus not working*/ {
+    border: 1px solid #9fc1ba;
+}
+
+.newsletter input:focus {
+    border-color: #9fc1ba;
+    outline: none;
 }
 
 .newsletter button {
@@ -192,6 +200,71 @@ tr:hover {
     color: #121212;
 }
 
-#contact {
-    display: flex;
+/* ----- about ----- */
+
+.about {
+    margin: 20px 50px;
 }
+
+figure {
+    width: 200px;
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+#me {
+    width: 100%;
+    border-radius: 20px;
+}
+
+figcaption {
+    background-color: #9fc1ba;
+    color: #121212;
+    text-align: center;
+    padding: 5px;
+}
+
+#favs {
+    margin-top: 20px;
+}
+
+#favs ul {
+    margin: 0;
+    list-style: inside;
+}
+
+/* ----- contact ----- */
+
+.contact {
+    margin: 20px 50px;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 30px);
+    min-width: 250px;
+}
+
+#contact-form input, #contact-form select, #contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #3f3f3f;
+    border: 1px solid #575757;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#contact-form input:hover, #contact-form select:hover, #contact-form textarea:hover {
+    border-color: #9fc1ba;
+} 
+
+#contact-form input:focus, #contact-form select:focus, #contact-form textarea:focus {
+    border-color: #9fc1ba;
+    outline: none;
+} 

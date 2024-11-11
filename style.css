@@ -252,11 +252,11 @@ figcaption {
 
 #contact-form input, #contact-form select, #contact-form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
     background-color: #3f3f3f;
     border: 1px solid #575757;
-    border-radius: 4px;
+    border-radius: 10px;
     color: #fff;
 }
 
